@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Store</a>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <h1 class="mb-4">Product Detail Information</h1>
+
+      <div class="card mb-4 w-75 shadow-sm">
+        <img
+          src="{{ product.image_url }}"
+          class="card-img-top"
+          alt="Product Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Product: {{ product.name }}</h5>
+          <p class="card-text text-muted">
+            Detailed information about the product will be displayed here.
+          </p>
+          <span class="fw-semibold">${{product.price}}</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container py-4">
+      <p class="text-muted mb-0">© 2025 Store</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
