@@ -1,0 +1,58 @@
+[
+  {
+    "model": "products.Product",
+    "pk": 1,
+    "fields": {
+      "name": "Wireless Mouse",
+      "image_url": "https://picsum.photos/seed/wirelessmouse/800/400",
+      "description": "Ergonomic wireless mouse with adjustable DPI.",
+      "price": 29.99,
+      "stock": 120,
+      "category": "Electronics",
+      "discount": 10,
+      "created_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 2,
+    "fields": {
+      "name": "Notebook A5",
+      "image_url": "https://picsum.photos/seed/notebooka5/800/400",
+      "description": "A5 lined notebook with durable cover.",
+      "price": 4.5,
+      "stock": 500,
+      "category": "Stationery",
+      "discount": 0,
+      "created_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 3,
+    "fields": {
+      "name": "Ceramic Coffee Mug",
+      "image_url": "https://picsum.photos/seed/ceramicmug/800/400",
+      "description": "350ml ceramic mug, dishwasher safe.",
+      "price": 12.0,
+      "stock": 200,
+      "category": "Home",
+      "discount": 5,
+      "created_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 4,
+    "fields": {
+      "name": "Bluetooth Headphones",
+      "image_url": "https://picsum.photos/seed/bluetoothheadphones/800/400",
+      "description": "Over-ear Bluetooth headphones with noise cancellation.",
+      "price": 79.99,
+      "stock": 80,
+      "category": "Electronics",
+      "discount": 15,
+      "created_at": "2024-01-18T10:00:00Z"
+    }
+  }
+]
