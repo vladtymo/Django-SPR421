@@ -78,6 +78,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'mssql_django',
+        # 'NAME': 'spr421db',
+        # 'USER': 'django_user',
+        # 'PASSWORD': 'qwer1234',
+        # 'HOST': '(localdb)\\MSSQLLocalDB',
+        # 'PORT': '1433',
+        # 'OPTIONS': {
+        #     'driver': 'ODBC Driver 18 for SQL Server',
+        # },
     }
 }
 
