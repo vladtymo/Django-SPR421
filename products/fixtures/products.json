@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Wireless Mouse",
-      "image_url": "https://picsum.photos/seed/wirelessmouse/800/400",
+      "image": "/product_images/mouse_1.webp",
       "description": "Ergonomic wireless mouse with adjustable DPI.",
       "price": 29.99,
       "stock": 120,
@@ -18,7 +18,7 @@
     "pk": 2,
     "fields": {
       "name": "Notebook A5",
-      "image_url": "https://picsum.photos/seed/notebooka5/800/400",
+      "image": "/product_images/notebook_5.webp",
       "description": "A5 lined notebook with durable cover.",
       "price": 4.5,
       "stock": 500,
@@ -32,7 +32,7 @@
     "pk": 3,
     "fields": {
       "name": "Ceramic Coffee Mug",
-      "image_url": "https://picsum.photos/seed/ceramicmug/800/400",
+      "image": "/product_images/cofee_1.webp",
       "description": "350ml ceramic mug, dishwasher safe.",
       "price": 12.0,
       "stock": 200,
@@ -45,8 +45,8 @@
     "model": "products.Product",
     "pk": 4,
     "fields": {
-      "name": "Bluetooth Headphones",
-      "image_url": "https://picsum.photos/seed/bluetoothheadphones/800/400",
+      "name": "Visio Pro",
+      "image": "/product_images/vision_pro.jpg",
       "description": "Over-ear Bluetooth headphones with noise cancellation.",
       "price": 79.99,
       "stock": 80,
@@ -59,8 +59,8 @@
     "model": "products.Product",
     "pk": 5,
     "fields": {
-      "name": "Bluetooth Headphones",
-      "image_url": "https://picsum.photos/seed/bluetoothheadphones/800/400",
+      "name": "Bluetooth Speaker",
+      "image": "/product_images/emberton-iii.webp",
       "description": "Over-ear Bluetooth headphones with noise cancellation.",
       "price": 79.99,
       "stock": 0,
@@ -73,8 +73,8 @@
     "model": "products.Product",
     "pk": 6,
     "fields": {
-      "name": "Bluetooth Headphones",
-      "image_url": "https://picsum.photos/seed/bluetoothheadphones/800/400",
+      "name": "Klipac Wireless Speaker",
+      "image": "/product_images/klipac_2.jpg",
       "description": "Over-ear Bluetooth headphones with noise cancellation.",
       "price": 79.99,
       "stock": 7,
