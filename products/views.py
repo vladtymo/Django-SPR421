@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404, redirect, render
+from django.contrib import messages
 
 from products.forms.product import ProductForm
 from products.models import Product
@@ -16,6 +17,7 @@ def product_create(request):
         product_form = ProductForm(request.POST, request.FILES)
         if product_form.is_valid():
             product_form.save()
+            messages.success(request, f"Product has been created successfully!")
             return redirect('list_products')
     product_form = ProductForm()
     return render(request, 'products/create.html', {'form': product_form})
@@ -27,6 +29,7 @@ def product_update(request, id):
         product_form = ProductForm(request.POST, request.FILES, instance=product)
         if product_form.is_valid():
             product_form.save()
+            messages.success(request, f"Product has been updated successfully!")
             return redirect('list_products')
     product_form = ProductForm(instance=product)
     return render(request, 'products/update.html', {'form': product_form})
@@ -34,5 +37,6 @@ def product_update(request, id):
 def product_delete(request, id):
     product = get_object_or_404(Product, pk=id)
     product.delete()
+    messages.error(request, f"Product has been deleted successfully!")
     return redirect('list_products')
     
