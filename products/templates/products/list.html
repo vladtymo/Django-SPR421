@@ -20,7 +20,14 @@
     {% for product in products %}
     <tr class="align-middle">
       <th scope="row">{{ product.id }}</th>
-      <td><img class="rounded" src="{{ product.image_url }}" alt="{{ product.name }}" style="width: 50px; height: 50px; object-fit: cover;"></td>
+      <td>
+        <img
+          class="rounded"
+          src="{% if product.image %}{{ product.image.url }}{% elif product.image_url %}{{ product.image_url }}{% else %}https://png.pngtree.com/png-vector/20221125/ourmid/pngtree-no-image-available-icon-flatvector-illustration-picture-coming-creative-vector-png-image_40968940.jpg{% endif %}"
+          alt="{{ product.name }}"
+          style="width: 50px; height: 50px; object-fit: cover"
+        />
+      </td>
       <td>{{ product.name }}</td>
       <td>{{ product.get_category_display }}</td>
       <td>${{ product.price }}</td>
@@ -35,8 +42,16 @@
       </td>
       <td>{{ product.discount }}%</td>
       <td>
-        <a class="btn btn-sm text-bg-secondary" href="/products/update/{{product.pk}}">Edit</a>
-        <a class="btn btn-sm text-bg-danger" href="/products/delete/{{product.pk}}">Delete</a>
+        <a
+          class="btn btn-sm text-bg-secondary"
+          href="/products/update/{{product.pk}}"
+          >Edit</a
+        >
+        <a
+          class="btn btn-sm text-bg-danger"
+          href="/products/delete/{{product.pk}}"
+          >Delete</a
+        >
       </td>
     </tr>
     {% empty %}
