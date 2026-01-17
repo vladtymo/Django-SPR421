@@ -1,8 +1,8 @@
 {% extends "layout.html" %} {% block content %}
 <h1 class="mb-4">Product Detail Information</h1>
 
-<div class="card mb-4 w-75 shadow-sm">
-  <img src="{{ product.image_url }}" class="card-img-top" alt="Product Image" />
+<div class="card mb-4 w-75 shadow-sm details-card">
+  <img src="{% if product.image %}{{ product.image.url }}{% elif product.image_url %}{{ product.image_url }}{% else %}https://png.pngtree.com/png-vector/20221125/ourmid/pngtree-no-image-available-icon-flatvector-illustration-picture-coming-creative-vector-png-image_40968940.jpg{% endif %}" class="card-img-top" alt="Product Image" />
   <div class="card-body">
     <h5 class="card-title">Product: {{ product.name }}</h5>
     <p class="card-text text-muted">
