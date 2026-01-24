@@ -35,19 +35,13 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="{% url 'index' %}"
-                >Catalog</a
-              >
+                href="{% url 'index' %}">Catalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'list_products' %}"
-                >Admin Panel</a
-              >
+              <a class="nav-link" href="{% url 'list_products' %}">Admin Panel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'favorites' %}"
-                >Favorites</a
-              >
+              <a class="nav-link" href="{% url 'favorites' %}">Favorites ({{favorite_count}})</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
