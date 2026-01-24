@@ -19,13 +19,13 @@
           <div>
             {% if p.id in fav_ids %}
             <a
-              href="/favorites/remove/{{p.id}}/index"
+              href="/favorites/remove/{{p.id}}?next={{request.path}}"
               class="btn btn-outline-success btn-sm"
               >Unfavorite</a
             >
             {% else %}
              <a
-              href="/favorites/add/{{p.id}}/index"
+              href="/favorites/add/{{p.id}}?next={{request.path}}"
               class="btn btn-success btn-sm"
               >Favorite</a
             >

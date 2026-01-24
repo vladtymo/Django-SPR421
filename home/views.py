@@ -12,6 +12,5 @@ def index(request, filter_by_favorites=False):
 
     return render(request, 'home/index.html', {
         'products': products, 
-        "fav_count": get_count_of_favorite_products(request),
         "fav_ids": get_favorite_products(request),
     })
